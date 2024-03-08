@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./GenerateBill.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+    />
+    <title>Admin | Generate Bill</title>
+  </head>
+  <body>
+    <div class="generate-bill" id="generatebill">
+      <span class="pages-generate" id="pageheading">Pages / Generate Bill</span>
+      <b class="generate-bill1" id="mainheading">Generate Bill</b>
+      <form class="large-dropzone2" id="generateform" data-animate-on-scroll>
+        <div class="title1" id="calculatebill">
+          <b class="calculate-bill" id="calculatetext"> Calculate Bill</b>
+        </div>
+        <label class="email5" htmlfor="accountid">
+          <div class="account-id">Account ID</div>
+        </label>
+        <input
+          class="input-field-focused-withou"
+          name="accountid"
+          id="accountid"
+          placeholder="Enter Account ID"
+          type="number"
+        />
+
+        <label class="email6" htmlfor="date">
+          <label class="date" htmlfor="date">Date</label>
+        </label>
+        <label class="email7" htmlfor="duedate">
+          <div class="due-date1">Due Date</div>
+        </label>
+        <input
+          class="input-field-focused-withou1"
+          name="date"
+          id="date"
+          placeholder="Select date"
+          type="date"
+        />
+
+        <label class="email8" htmlfor="currentreading">
+          <div class="current-reading">Current Reading</div>
+        </label>
+        <input
+          class="input-field-focused-withou2"
+          name="currreading"
+          id="currreading"
+          placeholder="Enter Current Reading"
+          type="number"
+        />
+
+        <input
+          class="input-field-focused-withou3"
+          name="duedate"
+          id="duedate"
+          placeholder="Select Due Date"
+          type="date"
+        />
+
+        <button class="large-button1" id="generatebutton" type="submit">
+          <div class="background1">
+            <div class="background-item"></div>
+          </div>
+          <div class="text6">
+            <div class="large-button2">Generate</div>
+          </div>
+        </button>
+      </form>
+
+      <b class="bangalore-north-branch" id="rname">Bangalore North Branch</b>
+      <div class="sidebar1" id="sidebar">
+        <div class="sidebar-notification-pro-c1" id="sidebarcont">
+          <div class="logo3" id="bescomcont">
+            <div class="text7" id="textcont">
+              <b class="bescom2" id="bescom">BESCOM</b>
+            </div>
+          </div>
+          <img class="pngtreebulb-icon-vector-bulb2" alt="" src="../bulb.png" />
+
+          <div class="pages1" id="navigatediv">
+            <div class="authentication2" id="generatebilldiv">
+              <a class="pagetitle5" id="pagetitle" href="./index.html"
+                >Generate Bill</a
+              >
+              <img class="icon7" alt="" src="../Dashboard/generatebill.png" />
+
+              <div class="active3"></div>
+            </div>
+            <div class="authentication3" id="profilediv">
+              <a class="pagetitle6" id="pagetitle1" href="../Profile/index.html">Profile</a>
+              <img class="icon8" alt="" src="../Dashboard/profile.png" />
+
+              <div class="active4"></div>
+            </div>
+            <div class="profile5" id="manageuserdiv">
+              <a class="pagetitle7" id="pagetitle2" href="../Manage User/User/User.html">Manage User</a>
+              <img class="icon9" alt="" src="../Dashboard/manageuser.png" />
+
+              <div class="active5"></div>
+            </div>
+            <div class="dashboard2" id="dashboarddiv">
+              <a class="pagetitle8" href="../Dashboard/index.html" id="pagetitle3"
+                >Dashboard</a
+              >
+              <img class="icon10" alt="" src="../Dashboard/dashboard.png" />
+            </div>
+            <br />
+          </div>
+
+          <button class="logout2" id="logout">
+            <b class="logout3" id="logouttext">Logout</b>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var pagetitle = document.getElementById("pagetitle");
+      if (pagetitle) {
+        pagetitle.addEventListener("click", function (e) {
+          // Please sync "generate bill" to the project
+        });
+      }
+
+      var pagetitle1 = document.getElementById("pagetitle1");
+      if (pagetitle1) {
+        pagetitle1.addEventListener("click", function (e) {
+          // Please sync "Profile" to the project
+        });
+      }
+
+      var pagetitle2 = document.getElementById("pagetitle2");
+      if (pagetitle2) {
+        pagetitle2.addEventListener("click", function (e) {
+          // Please sync "User" to the project
+        });
+      }
+
+      var pagetitle3 = document.getElementById("pagetitle3");
+      if (pagetitle3) {
+        pagetitle3.addEventListener("click", function (e) {
+          window.location.href = "./Dashboard.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll(
+        "[data-animate-on-scroll]"
+      );
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+    </script>
+  </body>
+</html>

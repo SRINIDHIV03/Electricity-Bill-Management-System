@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./Dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+    />
+    <title>Admin | Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard1" id="container" data-animate-on-scroll>
+      <h1 class="pages-dashboard" id="dashhead">Pages / Dashboard</h1>
+      <b class="main-dashboard" id="dashboardhead">Main Dashboard</b>
+      <div class="small-earnings" id="usercountdiv" data-animate-on-scroll>
+        <div class="text3" id="ucountdiv">
+          <span class="label" id="usercountspan">Users </span>
+          <div class="cash" placeholder="User Count" id="usercount">45</div>
+        </div>
+        <img class="icon4" id="users" alt="" src="./users.png" />
+      </div>
+      <div class="precentage" id="region">
+        <div class="bangalore-north" placeholder="Region Name" id="rname">
+          Bangalore North
+        </div>
+      </div>
+
+      <div class="small-earnings1" id="paymentdiv" data-animate-on-scroll>
+        <div class="text4" id="pdiv">
+          <span class="label1" id="paymentspan">Total Payments</span>
+          <div class="cash1" placeholder="Payments" id="paymenttext">
+            Rs. 200,000
+          </div>
+        </div>
+        <img class="icon5" alt="" src="./payment.png" />
+      </div>
+      <div class="small-sales" id="activeuserdiv" data-animate-on-scroll>
+        <div class="text5" id="auserdiv">
+          <span class="label2" id="auserspan">Active users</span>
+          <div class="cash2" placeholder="Active Users" id="auser">22</div>
+        </div>
+        <img class="icon6" id="activeuserimg" alt="" src="./active users.png" />
+      </div>
+      <img class="line-graph-1270163-1-icon" alt="" src="./statistics.png" />
+
+      <a class="view-statistics-wrapper" href="#">
+        <b class="view-statistics">View Statistics</b>
+      </a>
+      <div class="sidebar1" id="sidebar">
+        <div class="sidebar-notification-pro-c1" id="sidebarnav">
+          <div class="pages1" id="navdiv">
+            <div class="authentication2" id="generatebill">
+              <a
+                class="pagetitle4"
+                id="gbillnav"
+                href="../Generate Bill/index.html"
+                >Generate Bill</a
+              >
+              <img class="icon7" alt="" src="./generatebill.png" />
+
+              <div class="active3"></div>
+            </div>
+            <div class="authentication3" id="profile">
+              <a class="pagetitle5" id="profilenav" href="../Profile/index.html"
+                >Profile</a
+              >
+              <img class="icon8" id="profileimg" alt="" src="./profile.png" />
+
+              <div class="active4"></div>
+            </div>
+            <div class="profile5" id="manageuser">
+              <a
+                class="pagetitle6"
+                id="manageusernav"
+                href="../Manage User/User/User.html"
+                >Manage User</a
+              >
+              <img
+                class="icon9"
+                id="manageuserimg"
+                alt=""
+                src="./manageuser.png"
+              />
+
+              <div class="active5"></div>
+            </div>
+            <div class="dashboard2" id="dashboraddiv">
+              <a class="pagetitle7" id="dashboard" href="./index.html"
+                >Dashboard</a
+              >
+              <img
+                class="icon10"
+                id="dashboardimg"
+                alt=""
+                src="./dashboard.png"
+              />
+            </div>
+          </div>
+          <div class="logo2" id="textarea">
+            <div class="text6" id="textarea1">
+              <b class="bescom2" id="bescomtext">BESCOM</b>
+            </div>
+          </div>
+          <img class="pngtreebulb-icon-vector-bulb2" alt="" src="./bulb.png" />
+
+          <button class="logout4" id="logout">
+            <b class="logout5" id="logouttext">Logout</b>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var pagetitle = document.getElementById("gbillnav");
+      if (pagetitle) {
+        pagetitle.addEventListener("click", function (e) {
+          window.location.href = "./GenerateBill.html";
+        });
+      }
+
+      var pagetitle1 = document.getElementById("profilenav");
+      if (pagetitle1) {
+        pagetitle1.addEventListener("click", function (e) {
+          // Please sync "Profile" to the project
+        });
+      }
+
+      var pagetitle2 = document.getElementById("manageusernav");
+      if (pagetitle2) {
+        pagetitle2.addEventListener("click", function (e) {
+          // Please sync "User" to the project
+        });
+      }
+
+      var pagetitle3 = document.getElementById("dashboard");
+      if (pagetitle3) {
+        pagetitle3.addEventListener("click", function (e) {
+          // Please sync "Dashboard" to the project
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll(
+        "[data-animate-on-scroll]"
+      );
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+    </script>
+  </body>
+</html>

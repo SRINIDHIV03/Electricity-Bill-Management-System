@@ -1,0 +1,533 @@
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .pages-dashboard {
+    margin: 0;
+    position: absolute;
+    top: 27.6px;
+    left: 277.3px;
+    font-size: 12.1px;
+    line-height: 20.67px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #707eae;
+  }
+  .label,
+  .main-dashboard {
+    position: absolute;
+    letter-spacing: -0.02em;
+  }
+  .main-dashboard {
+    top: 49.9px;
+    left: 277.3px;
+    font-size: 29.3px;
+    line-height: 36.17px;
+    font-weight: 700;
+    color: #2b3674;
+  }
+  .label {
+    top: 0;
+    left: 0;
+    line-height: 48.79px;
+    font-weight: 500;
+    display: inline-block;
+    width: 237.9px;
+    height: 45.9px;
+  }
+  .cash,
+  .icon4,
+  .text3 {
+    position: absolute;
+    width: 292.8px;
+  }
+  .cash {
+    border: 0;
+    background-color: transparent;
+    display: inline-block;
+    font-family: "DM Sans";
+    font-size: 48.8px;
+    outline: 0;
+    top: 46.8px;
+    left: 0;
+    letter-spacing: -0.02em;
+    line-height: 65.06px;
+    font-weight: 700;
+    color: #2b3674;
+    text-align: left;
+    height: 63px;
+  }
+  .icon4,
+  .text3 {
+    top: 40.7px;
+    left: 185.4px;
+    height: 109.8px;
+  }
+  .icon4 {
+    left: 34.6px;
+    width: 113.9px;
+    height: 113.9px;
+    object-fit: cover;
+  }
+  .small-earnings {
+    position: absolute;
+    top: 146.4px;
+    left: 264px;
+    border-radius: 40.66px;
+    background-color: #fff;
+    width: 525px;
+    height: 197px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .small-earnings.animate,
+  .small-earnings1.animate,
+  .small-sales.animate {
+    animation: 0.5s ease 0s 1 normal forwards slide-in-top;
+  }
+  .bangalore-north,
+  .precentage {
+    position: absolute;
+    width: 376.7px;
+    height: 18.3px;
+  }
+  .bangalore-north {
+    border: 0;
+    background-color: transparent;
+    display: inline-block;
+    font-family: "DM Sans";
+    font-size: 26.1px;
+    outline: 0;
+    top: 0;
+    left: 0;
+    letter-spacing: -0.02em;
+    line-height: 26.11px;
+    font-weight: 700;
+    color: #05cd99;
+    text-align: left;
+  }
+  .precentage {
+    top: 93.4px;
+    left: 277.8px;
+  }
+  .bangalore-north1,
+  .label1 {
+    position: absolute;
+    letter-spacing: -0.02em;
+    display: inline-block;
+  }
+  .bangalore-north1 {
+    border: 0;
+    background-color: transparent;
+    font-family: "DM Sans";
+    font-size: 26.1px;
+    outline: 0;
+    top: 93.4px;
+    left: 278px;
+    line-height: 26.11px;
+    font-weight: 700;
+    color: #05cd99;
+    text-align: left;
+    width: 376px;
+    height: 18px;
+  }
+  .label1 {
+    top: 0;
+    left: 0.4px;
+    line-height: 48.81px;
+    font-weight: 500;
+    width: 238px;
+    height: 45.9px;
+  }
+  .cash1,
+  .icon5,
+  .text4 {
+    position: absolute;
+    width: 339.7px;
+  }
+  .cash1 {
+    border: 0;
+    background-color: transparent;
+    display: inline-block;
+    font-family: "DM Sans";
+    font-size: 48.8px;
+    outline: 0;
+    top: 46.8px;
+    left: 0;
+    letter-spacing: -0.02em;
+    line-height: 65.09px;
+    font-weight: 700;
+    color: #2b3674;
+    text-align: left;
+    height: 63.1px;
+  }
+  .icon5,
+  .text4 {
+    top: 40.7px;
+    left: 185.1px;
+    height: 109.8px;
+  }
+  .icon5 {
+    left: 34.6px;
+    width: 113.9px;
+    height: 113.9px;
+    object-fit: cover;
+  }
+  .small-earnings1 {
+    position: absolute;
+    top: 145.4px;
+    left: 881px;
+    border-radius: 40.68px;
+    background-color: #fff;
+    width: 525px;
+    height: 197px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .label2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: -0.02em;
+    line-height: 48.18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 234.9px;
+    height: 26.1px;
+  }
+  .cash2,
+  .icon6,
+  .text5 {
+    position: absolute;
+    width: 289.1px;
+  }
+  .cash2 {
+    border: 0;
+    background-color: transparent;
+    display: inline-block;
+    font-family: "DM Sans";
+    font-size: 48.2px;
+    outline: 0;
+    top: 32.1px;
+    left: 0;
+    letter-spacing: -0.02em;
+    line-height: 64.24px;
+    font-weight: 700;
+    color: #2b3674;
+    text-align: left;
+    height: 62.2px;
+  }
+  .icon6,
+  .text5 {
+    top: 48.2px;
+    left: 192.7px;
+    height: 94.3px;
+  }
+  .icon6 {
+    left: 38.1px;
+    width: 112.4px;
+    height: 112.4px;
+    object-fit: cover;
+  }
+  .small-sales {
+    position: absolute;
+    top: 368.4px;
+    left: 585px;
+    border-radius: 40.15px;
+    background-color: #fff;
+    width: 502px;
+    height: 190.1px;
+    overflow: hidden;
+    opacity: 0;
+    font-size: 28.1px;
+  }
+  .line-graph-1270163-1-icon {
+    position: absolute;
+    top: 393.4px;
+    left: 1144px;
+    width: 259px;
+    height: 206px;
+    object-fit: cover;
+  }
+  .view-statistics {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 24.11px;
+  }
+  .pagetitle4,
+  .view-statistics-wrapper {
+    text-decoration: none;
+    position: absolute;
+  }
+  .view-statistics-wrapper {
+    top: 619.4px;
+    left: 1186px;
+    border-radius: 30px;
+    background-color: #4318ff;
+    width: 177px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 13.8px;
+    color: #f6f9ff;
+  }
+  .pagetitle4 {
+    top: 2.5px;
+    left: 29.8px;
+    letter-spacing: -0.02em;
+    line-height: 24.86px;
+    font-weight: 500;
+    color: inherit;
+    cursor: pointer;
+  }
+  .icon7 {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 19.9px;
+    height: 19.9px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .active3,
+  .authentication2 {
+    position: absolute;
+    height: 29.8px;
+  }
+  .active3 {
+    top: 0;
+    left: 209.7px;
+    border-radius: 20.72px;
+    width: 3.3px;
+  }
+  .authentication2 {
+    top: 88.9px;
+    left: 1.7px;
+    width: 213px;
+  }
+  .pagetitle5 {
+    text-decoration: none;
+    position: absolute;
+    top: 2.5px;
+    left: 29.8px;
+    letter-spacing: -0.02em;
+    line-height: 24.86px;
+    font-weight: 500;
+    color: inherit;
+    cursor: pointer;
+  }
+  .icon8 {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 19.9px;
+    height: 19.9px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .active4,
+  .authentication3 {
+    position: absolute;
+    height: 29.8px;
+  }
+  .active4 {
+    top: 0;
+    left: 209.7px;
+    border-radius: 20.72px;
+    width: 3.3px;
+  }
+  .authentication3 {
+    top: 135.3px;
+    left: 1.7px;
+    width: 213px;
+  }
+  .pagetitle6 {
+    text-decoration: none;
+    position: absolute;
+    top: 2.5px;
+    left: 29.8px;
+    letter-spacing: -0.02em;
+    line-height: 24.86px;
+    font-weight: 500;
+    color: inherit;
+    cursor: pointer;
+  }
+  .icon9 {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 19.9px;
+    height: 19.9px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .active5,
+  .profile5 {
+    position: absolute;
+    height: 29.8px;
+  }
+  .active5 {
+    top: 0;
+    left: 209.7px;
+    border-radius: 20.72px;
+    width: 3.3px;
+  }
+  .profile5 {
+    top: 43.3px;
+    left: 0;
+    width: 213px;
+  }
+  .pagetitle7 {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 29.8px;
+    letter-spacing: -0.02em;
+    line-height: 24.86px;
+    font-weight: 700;
+    color: inherit;
+    cursor: pointer;
+  }
+  .icon10 {
+    position: absolute;
+    top: 2.5px;
+    left: 0;
+    width: 19.9px;
+    height: 19.9px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .dashboard2,
+  .pages1 {
+    position: absolute;
+    top: 0;
+    left: 1.8px;
+    width: 98.8px;
+    height: 25px;
+  }
+  .pages1 {
+    top: 177.2px;
+    left: 25.7px;
+    width: 214.7px;
+    height: 165.2px;
+  }
+  .bescom2,
+  .logo2,
+  .text6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bescom2 {
+    line-height: 100%;
+    font-weight: 700;
+  }
+  .logo2,
+  .text6 {
+    width: 93px;
+    height: 22px;
+  }
+  .logo2 {
+    top: 54.7px;
+    left: 59.7px;
+    font-size: 21.5px;
+    font-family: Poppins;
+  }
+  .pngtreebulb-icon-vector-bulb2 {
+    position: absolute;
+    height: 5.9%;
+    width: 22.41%;
+    top: 6.72%;
+    right: 73.38%;
+    bottom: 87.39%;
+    left: 4.22%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .logout5 {
+    position: relative;
+    font-size: 13.8px;
+    letter-spacing: -0.02em;
+    line-height: 24.11px;
+    font-weight: 700;
+    font-family: "DM Sans";
+    color: #fff;
+    text-align: center;
+  }
+  .logout4 {
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    background-color: #4318ff;
+    position: absolute;
+    top: 513px;
+    left: 62px;
+    border-radius: 10px;
+    width: 113px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .sidebar-notification-pro-c1 {
+    width: 237px;
+    position: relative;
+    background-color: #fff;
+    height: 685px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .sidebar1 {
+    position: absolute;
+    top: 6.4px;
+    left: 0;
+    border-radius: 0 0 16.58px 0;
+    width: 240px;
+    height: 685px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 13.3px;
+    color: #2b3674;
+  }
+  .dashboard1 {
+    width: 100%;
+    height: 695px;
+    position: relative;
+    background-color: #f4f7fe;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    opacity: 0;
+    text-align: left;
+    font-size: 28.5px;
+    color: #a3aed0;
+    font-family: "DM Sans";
+  }
+  .dashboard1.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in;
+  }
+  

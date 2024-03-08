@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./User.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin | Manage User</title>
+  </head>
+
+  <body>
+    <div class="user" id="usercontainer">
+      <b class="pages-manage" id="pagehead">Pages / Manage User</b>
+      <b class="manage-user" id="mainhead">Manage User</b>
+
+      <div class="user-child" id="tablearea">
+        <b style="font-size: 25px;">View Users</b>
+        <div class="user-details" id="user1">
+          <p>Account ID: <span class="account-id">12345</span></p>
+          <div class="additional-info" style="display: none">
+            <p>
+              Name:
+              <input type="text" class="name" value="John Doe" readonly />
+            </p>
+            <p>
+              Address:
+              <input
+                type="text"
+                class="address"
+                value="123 Street, City"
+                readonly
+              />
+            </p>
+            <p>
+              Phone:
+              <input type="text" class="phone" value="123-456-7890" readonly />
+            </p>
+            <p>
+              Tariff ID:
+              <select class="tariff-id" disabled>
+                <option value="1">Tariff Plan 1</option>
+                <option value="2">Tariff Plan 2</option>
+                <option value="3">Tariff Plan 3</option>
+              </select>
+            </p>
+            <p>
+              Scheme ID:
+              <select class="scheme-id" disabled>
+                <option value="1">Scheme 1</option>
+                <option value="2">Scheme 2</option>
+                <option value="3">Scheme 3</option>
+              </select>
+            </p>
+            <p>
+              Credit/Debit:
+              <input type="text" class="credit-debit" value="$100" readonly />
+            </p>
+            <p>
+              Connection Status:
+              <label
+                ><input
+                  type="radio"
+                  class="connection-status"
+                  name="connection-status"
+                  value="Active"
+                  readonly
+                  disabled
+                  checked
+                />
+                Active</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  class="connection-status"
+                  name="connection-status"
+                  value="Inactive"
+                  readonly
+                  disabled
+                />
+                Inactive</label
+              >
+            </p>
+          </div>
+          <div class="options">
+            <button class="expand-btn">Expand</button>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+      </div>
+      <div class="adduser">
+        <b style="font-size: 25px;">Add User</b>
+        <form id="addUserForm">
+          <label for="aadhar">Aadhar:</label>
+          <input
+            type="number"
+            id="aadhar"
+            name="aadhar"
+            required
+            minlength="10"
+            maxlength="10"
+          />
+          <br />
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required />
+          <br />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            minlength="12"
+            maxlength="12"
+          />
+          <br />
+
+          <label for="tariff">Tariff ID:</label>
+          <select id="tariff" name="tariff" required>
+            <option value="">Select Tariff ID</option>
+            <option value="1">Tariff ID 1</option>
+            <option value="2">Tariff ID 2</option>
+            <option value="3">Tariff ID 3</option>
+          </select>
+          <br />
+
+          <label for="scheme">Scheme ID:</label>
+          <select id="scheme" name="scheme">
+            <option value="">Select Scheme ID (Optional)</option>
+            <option value="1">Scheme ID 1</option>
+            <option value="2">Scheme ID 2</option>
+            <option value="3">Scheme ID 3</option>
+          </select>
+          <br />
+
+          <button type="submit">Add User</button>
+        </form>
+      </div>
+
+      <div class="misc" id="searchbardiv">
+        <div class="misc-child" id="searchbar"></div>
+        <div class="large-input2" id="searchbar1">
+          <div class="background3" id="searchbar2">
+            <div class="background-inner" id="searchbar3"></div>
+          </div>
+          <input
+            class="text9"
+            name="search"
+            id="search"
+            placeholder="Search by Account ID"
+            type="number"
+          />
+
+          <img class="search-icon" alt="" src="../../search.png" />
+        </div>
+      </div>
+      <b class="bangalore-north2" id="rname">Bangalore North</b>
+      <div class="button4" id="buttonContainer1">
+        <a class="medium-button1" id="adduser">
+          <div class="background4">
+            <div class="rectangle-div"></div>
+          </div>
+          <div class="text10">
+            <b class="add-user1">Add User</b>
+          </div>
+        </a>
+      </div>
+      <div class="sidebar3" id="sidebar">
+        <div class="sidebar-notification-pro-c3" id="sidebarcont">
+          <div class="logo4" id="bescomcont">
+            <div class="text11" id="textcont">
+              <b class="bescom4" id="bescom">BESCOM</b>
+            </div>
+          </div>
+          <img
+            class="pngtreebulb-icon-vector-bulb4"
+            alt=""
+            src="../../bulb.png"
+          />
+
+          <div class="pages3" id="navigatediv">
+            <div class="authentication6" id="generatebilldiv">
+              <a class="pagetitle12" id="pagetitle" href="../../Generate Bill/index.html">Generate Bill</a>
+              <img
+                class="icon15"
+                alt=""
+                src="../../Dashboard/generatebill.png"
+                
+              />
+
+              <div class="active9"></div>
+            </div>
+            <div class="authentication7" id="profilediv">
+              <a class="pagetitle13" href="../../Profile/index.html" id="pagetitle1"
+                >Profile</a
+              >
+              <img class="icon16" alt="" src="../../Dashboard/profile.png" />
+
+              <div class="active10"></div>
+            </div>
+            <div class="profile9" id="manageuserdiv">
+              <a class="pagetitle14" href="../../Manage User/User/User.html" id="pagetitle2"
+                >Manage User</a
+              >
+              <img class="icon17" alt="" src="../../Dashboard/manageuser.png" />
+
+              <div class="active11"></div>
+            </div>
+            <div class="dashboard4" id="dashboarddiv">
+              <a class="pagetitle15" href="../../Dashboard/index.html" id="pagetitle3"
+                >Dashboard</a
+              >
+              <img class="icon18" alt="" src="../../Dashboard/dashboard.png" />
+            </div>
+          </div>
+          <button class="logout8" id="logout">
+            <b class="logout9" id="logouttext">Logout</b>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      var buttonContainer1 = document.getElementById("buttonContainer1");
+      if (buttonContainer1) {
+        buttonContainer1.addEventListener("click", function (e) {
+          // Please sync "Add User" to the project
+        });
+      }
+
+      var pagetitle = document.getElementById("pagetitle");
+      if (pagetitle) {
+        pagetitle.addEventListener("click", function (e) {
+          // Please sync "generate bill" to the project
+        });
+      }
+
+      var pagetitle1 = document.getElementById("pagetitle1");
+      if (pagetitle1) {
+        pagetitle1.addEventListener("click", function (e) {
+          window.location.href = "./Profile1.html";
+        });
+      }
+
+      var pagetitle2 = document.getElementById("pagetitle2");
+      if (pagetitle2) {
+        pagetitle2.addEventListener("click", function (e) {
+          window.location.href = "./User1.html";
+        });
+      }
+
+      var pagetitle3 = document.getElementById("pagetitle3");
+      if (pagetitle3) {
+        pagetitle3.addEventListener("click", function (e) {
+          window.location.href = "./Dashboard.html";
+        });
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

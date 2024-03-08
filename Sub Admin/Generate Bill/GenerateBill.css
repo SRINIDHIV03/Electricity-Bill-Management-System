@@ -1,0 +1,499 @@
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+*{
+    font-family: 'DM Sans';
+}
+  .pages-generate {
+    position: absolute;
+    top: 27.6px;
+    left: 277.3px;
+    line-height: 20.67px;
+    font-weight: 500;
+    color: #707eae;
+  }
+  .calculate-bill,
+  .generate-bill1 {
+    position: absolute;
+    top: 49.9px;
+    left: 277.3px;
+    font-size: 29.3px;
+    letter-spacing: -0.02em;
+    line-height: 36.17px;
+  }
+  .calculate-bill {
+    top: 0;
+    left: 0;
+    font-size: 20.7px;
+    line-height: 27.56px;
+    font-weight: 700;
+    font-family: "DM Sans";
+    color: #2b3674;
+    text-align: left;
+  }
+  .title1 {
+    position: absolute;
+    top: 17.2px;
+    left: 26.7px;
+    width: 129px;
+    height: 28px;
+  }
+  .account-id {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12.1px;
+    letter-spacing: -0.02em;
+    line-height: 100%;
+    font-weight: 500;
+    font-family: "DM Sans";
+    color: #2b3674;
+    text-align: left;
+  }
+  .email5 {
+    cursor: pointer;
+    position: absolute;
+    top: 63.7px;
+    left: 26.7px;
+    width: 61px;
+    height: 12px;
+  }
+  .input-field-focused-withou {
+    border: 0.9px solid #2e65f3;
+    outline: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 86.1px;
+    left: 26.7px;
+    border-radius: 6.89px;
+    box-sizing: border-box;
+    width: 1110px;
+    height: 41.3px;
+  }
+  .date,
+  .email6 {
+    cursor: pointer;
+    position: absolute;
+  }
+  .date {
+    top: 0;
+    left: 0;
+    font-size: 12.1px;
+    letter-spacing: -0.02em;
+    line-height: 100%;
+    font-weight: 500;
+    font-family: "DM Sans";
+    color: #2b3674;
+    text-align: left;
+  }
+  .email6 {
+    top: 146.4px;
+    left: 26.7px;
+    width: 27px;
+    height: 12px;
+  }
+  .due-date1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12.1px;
+    letter-spacing: -0.02em;
+    line-height: 100%;
+    font-weight: 500;
+    font-family: "DM Sans";
+    color: #2b3674;
+    text-align: left;
+  }
+  .email7 {
+    cursor: pointer;
+    position: absolute;
+    top: 146.4px;
+    left: 605.4px;
+    width: 51px;
+    height: 12px;
+  }
+  .input-field-focused-withou1 {
+    border: 0.9px solid #2e65f3;
+    outline: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 166.2px;
+    left: 26.7px;
+    border-radius: 6.89px;
+    box-sizing: border-box;
+    width: 538.2px;
+    height: 41.3px;
+  }
+  .current-reading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12.1px;
+    letter-spacing: -0.02em;
+    line-height: 100%;
+    font-weight: 500;
+    font-family: "DM Sans";
+    color: #2b3674;
+    text-align: left;
+  }
+  .email8 {
+    cursor: pointer;
+    position: absolute;
+    top: 228.2px;
+    left: 26.7px;
+    width: 89px;
+    height: 12px;
+  }
+  .input-field-focused-withou2,
+  .input-field-focused-withou3 {
+    border: 0.9px solid #2e65f3;
+    outline: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 250.6px;
+    left: 26.7px;
+    border-radius: 6.89px;
+    box-sizing: border-box;
+    width: 1110px;
+    height: 41.3px;
+  }
+  .input-field-focused-withou3 {
+    top: 166.2px;
+    left: 605.4px;
+    width: 531.3px;
+  }
+  .large-dropzone2 {
+    margin: 0;
+    position: absolute;
+    top: 174px;
+    left: 277.8px;
+    border-radius: 17.22px;
+    background-color: #fff;
+    width: 1166.8px;
+    height: 336px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .large-dropzone2.animate {
+    animation: 0.5s ease 0s 1 normal forwards slide-in-top;
+  }
+  .background-item {
+    border-radius: 13.78px;
+    background-color: #4318ff;
+  }
+  .background-item,
+  .background1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .large-button2 {
+    position: absolute;
+    top: calc(50% - 10.5px);
+    left: calc(50% - 26px);
+    font-size: 12.1px;
+    letter-spacing: -0.02em;
+    line-height: 20.67px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    color: #fff;
+    text-align: center;
+  }
+  .text6 {
+    position: absolute;
+    top: calc(50% - 10.1px);
+    left: calc(50% - 26.6px);
+    width: 52px;
+    height: 21px;
+  }
+  .large-button1 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 597.4px;
+    bottom: 79px;
+    width: 120.6px;
+    height: 39.6px;
+  }
+  .bangalore-north-branch {
+    position: absolute;
+    top: 95.9px;
+    left: 277.8px;
+    font-size: 26.1px;
+    letter-spacing: -0.02em;
+    line-height: 26.11px;
+    font-weight: 700;
+    color: #05cd99;
+    display: inline-block;
+    width: 376.7px;
+    height: 18.3px;
+  }
+  .bescom2,
+  .logo3,
+  .text7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bescom2 {
+    line-height: 100%;
+    font-weight: 700;
+  }
+  .logo3,
+  .text7 {
+    width: 96px;
+    height: 22px;
+  }
+  .logo3 {
+    top: 56.8px;
+    left: 62px;
+  }
+  .pngtreebulb-icon-vector-bulb2 {
+    position: absolute;
+    height: 5.9%;
+    width: 22.4%;
+    top: 5.51%;
+    right: 74.76%;
+    bottom: 88.59%;
+    left: 2.85%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .pagetitle5 {
+    text-decoration: none;
+    position: absolute;
+    top: 2.5px;
+    left: 29.7px;
+    letter-spacing: -0.02em;
+    line-height: 24.86px;
+    font-weight: 700;
+    color: inherit;
+    display: inline-block;
+    width: 85px;
+    cursor: pointer;
+  }
+  .icon7 {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 19.8px;
+    height: 19.9px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .active3,
+  .authentication2 {
+    position: absolute;
+    height: 29.8px;
+  }
+  .active3 {
+    top: 0;
+    left: 208.7px;
+    border-radius: 20.72px;
+    width: 3.3px;
+  }
+  .authentication2 {
+    top: 89.7px;
+    left: 1.3px;
+    width: 212px;
+  }
+  .pagetitle6 {
+    text-decoration: none;
+    position: absolute;
+    top: 2.5px;
+    left: 29.8px;
+    letter-spacing: -0.02em;
+    line-height: 24.86px;
+    font-weight: 500;
+    color: inherit;
+    cursor: pointer;
+  }
+  .icon8 {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 19.9px;
+    height: 19.9px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .active4,
+  .authentication3 {
+    position: absolute;
+    height: 29.8px;
+  }
+  .active4 {
+    top: 0;
+    left: 209.7px;
+    border-radius: 20.72px;
+    width: 3.3px;
+  }
+  .authentication3 {
+    top: 135.3px;
+    left: 1.7px;
+    width: 213px;
+  }
+  .pagetitle7 {
+    text-decoration: none;
+    position: absolute;
+    top: 2.5px;
+    left: 29.8px;
+    letter-spacing: -0.02em;
+    line-height: 24.86px;
+    font-weight: 500;
+    color: inherit;
+    cursor: pointer;
+  }
+  .icon9 {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 19.9px;
+    height: 19.9px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .active5,
+  .profile5 {
+    position: absolute;
+    height: 29.8px;
+  }
+  .active5 {
+    top: 0;
+    left: 209.7px;
+    border-radius: 20.72px;
+    width: 3.3px;
+  }
+  .profile5 {
+    top: 43.3px;
+    left: 0;
+    width: 213px;
+  }
+  .pagetitle8 {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 29.8px;
+    letter-spacing: -0.02em;
+    line-height: 24.86px;
+    font-weight: 500;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #2b3674;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+  .icon10 {
+    position: absolute;
+    top: 2.5px;
+    left: 0;
+    width: 19.9px;
+    height: 19.9px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .dashboard2 {
+    position: absolute;
+    top: 0;
+    left: 1.8px;
+    width: 96.8px;
+    height: 25px;
+  }
+  .logout3,
+  .pages1 {
+    font-family: "DM Sans";
+  }
+  .pages1 {
+    position: absolute;
+    top: 144.3px;
+    left: 34.7px;
+    width: 214.7px;
+    height: 165.2px;
+    font-size: 13.3px;
+  }
+  .logout3 {
+    position: relative;
+    font-size: 13.8px;
+    letter-spacing: -0.02em;
+    line-height: 24.11px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
+  .logout2 {
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    background-color: #4318ff;
+    position: absolute;
+    top: 587px;
+    left: 62px;
+    border-radius: 10px;
+    width: 113px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .sidebar-notification-pro-c1 {
+    width: 246px;
+    position: relative;
+    background-color: #fff;
+    height: 690px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .generate-bill,
+  .sidebar1 {
+    height: 690px;
+    overflow: hidden;
+  }
+  .sidebar1 {
+    position: absolute;
+    top: 0.4px;
+    left: 0;
+    border-radius: 0 0 17.22px 0;
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 22.4px;
+    font-family: Poppins;
+  }
+  .generate-bill {
+    width: 100%;
+    position: relative;
+    background-color: #f4f7fe;
+    text-align: left;
+    font-size: 12.1px;
+    color: #2b3674;
+    font-family: "DM Sans";
+  }
+  
+  #generatebutton{
+    position: bottom;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  

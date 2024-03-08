@@ -1,0 +1,87 @@
+.user-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.options button {
+    margin-right: 10px;
+}
+
+.adduser{
+    position: absolute;
+    height: max-content;
+    /* width: max-content; */
+    top:140px;
+
+    right:90px;
+}
+#tablearea{
+    height: max-content;
+    width: 25%;
+}
+
+
+
+button{
+    color: #ccc;
+    background-color: blue;
+    border-radius: 3px;
+    font-family: 'DM Sans';
+}
+
+
+.sidebar3{
+    position: fixed;
+}
+/* Styles for Add User Form */
+.adduser {
+    /* max-width: 400px; */
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.adduser form {
+    display: grid;
+    /* gap: 3px; */
+}
+
+.adduser label {
+    font-weight: bold;
+}
+
+.adduser input[type="text"],
+.adduser input[type="number"],
+.adduser input[type="tel"],
+.adduser select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.adduser button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.adduser button[type="submit"]:hover {
+    background-color: blue;
+}
+
+.adduser button[type="submit"]:focus {
+    outline: none;
+}
+
+.adduser input:invalid {
+    border-color: #ff0000;
+}
+

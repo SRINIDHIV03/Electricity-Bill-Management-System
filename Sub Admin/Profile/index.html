@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./Profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+    />
+    <title>Admin | Profile</title>
+  </head>
+  <body>
+    <div class="profile6" id="profilepagediv">
+      <b class="pages-profile" id="pagehead">Pages / Profile</b>
+      <b class="profile7" id="mainhead">Profile</b>
+      <div class="precentage1" id="rnamediv">
+        <b class="bangalore-north-branch1" id="rname">Bangalore North Branch</b>
+      </div>
+      <div class="medium-profile" id="profilediv" data-animate-on-scroll>
+        <div class="background1" id="yourprofilediv"></div>
+        <span class="title2" id="yourprofiletext">
+          <b class="your-profile1" id="yourprofile">Your Profile</b>
+        </span>
+        <div class="user-parent" id="getfromadmin">
+          <div class="user" id="adminiddiv">
+            <div class="a1" id="adminid">BLRA01</div>
+            <label class="admin-id2" htmlfor="adminid">Admin id:</label>
+          </div>
+          <div class="user1" id="namediv">
+            <div class="adminname" id="name">Rohan Chatterjee</div>
+            <label class="name2" htmlfor="name">Name:</label>
+          </div>
+          <div class="user2" id="addressdiv">
+            <div class="addressadmin" id="address">99 Malleswaram 560003</div>
+            <label class="address1" htmlfor="address">Address:</label>
+          </div>
+          <div class="user3" id="phonediv">
+            <div class="b" id="phone">8642093175</div>
+            <label class="phone3" htmlfor="phone">Phone:</label>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar2" id="sidebar">
+        <div class="sidebar-notification-pro-c2" id="sidebarcont">
+          <div class="logo3" id="bescomcont">
+            <div class="text7" id="textcont">
+              <b class="bescom3" id="bescom">BESCOM</b>
+            </div>
+          </div>
+          <img
+            class="pngtreebulb-icon-vector-bulb3"
+            alt=""
+            src="../bulb.png"
+          />
+
+          <div class="pages2" id="navigatediv">
+            <div class="authentication4" id="generatebilldiv">
+              <a class="pagetitle8" id="pagetitle" href="../Generate Bill/index.html">Generate Bill</a>
+              <img class="icon11" alt="" src="../Dashboard/generatebill.png" />
+
+              <div class="active6"></div>
+            </div>
+            <div class="authentication5" id="profilediv">
+              <a class="pagetitle9" href="./index.html" id="pagetitle1"
+                >Profile</a
+              >
+              <img class="icon12" alt="" src="../Dashboard/profile.png" />
+
+              <div class="active7"></div>
+            </div>
+            <div class="profile8" id="manageuserdiv">
+              <a class="pagetitle10" id="pagetitle2" href="../Manage User/User/User.html">Manage User</a>
+              <img class="icon13" alt="" src="../Dashboard/manageuser.png" />
+
+              <div class="active8"></div>
+            </div>
+            <div class="dashboard3" id="dashboarddiv">
+              <a class="pagetitle11" href="../Dashboard/index.html" id="pagetitle3"
+                >Dashboard</a
+              >
+              <img class="icon14" alt="" src="../Dashboard/dashboard.png" />
+            </div>
+          </div>
+          <button class="logout6" id="logout">
+            <b class="logout7" id="logouttext">Logout</b>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var pagetitle = document.getElementById("pagetitle");
+      if (pagetitle) {
+        pagetitle.addEventListener("click", function (e) {
+          // Please sync "generate bill" to the project
+        });
+      }
+      
+      var pagetitle1 = document.getElementById("pagetitle1");
+      if (pagetitle1) {
+        pagetitle1.addEventListener("click", function (e) {
+          window.location.href = "./Profile1.html";
+        });
+      }
+      
+      var pagetitle2 = document.getElementById("pagetitle2");
+      if (pagetitle2) {
+        pagetitle2.addEventListener("click", function (e) {
+          // Please sync "User" to the project
+        });
+      }
+      
+      var pagetitle3 = document.getElementById("pagetitle3");
+      if (pagetitle3) {
+        pagetitle3.addEventListener("click", function (e) {
+          window.location.href = "./Dashboard.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
